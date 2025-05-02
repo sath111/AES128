@@ -1,0 +1,408 @@
+$date
+	Mon Apr 21 21:57:23 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module KeyLogic_tb $end
+$var wire 32 ! subword [31:0] $end
+$var wire 1 " select $end
+$var wire 32 # rotword [31:0] $end
+$var wire 128 $ key_new [127:0] $end
+$var wire 1 % done $end
+$var reg 128 & InputBlk [127:0] $end
+$var reg 1 ' clk $end
+$var reg 1 ( keyrd $end
+$var reg 1 ) mode $end
+$var reg 1 * rst_n $end
+$scope module dut $end
+$var wire 128 + InputBlk [127:0] $end
+$var wire 1 ' clk $end
+$var wire 1 ( keyrd $end
+$var wire 1 ) mode $end
+$var wire 32 , rot_in [31:0] $end
+$var wire 1 * rst_n $end
+$var wire 32 - subword [31:0] $end
+$var wire 128 . sbox_outv1 [127:0] $end
+$var wire 1 / sbox_out $end
+$var wire 32 0 rotword [31:0] $end
+$var wire 128 1 key_new [127:0] $end
+$var reg 1 % done $end
+$var reg 128 2 key_prev [127:0] $end
+$var reg 4 3 round [3:0] $end
+$var reg 1 " select $end
+$var reg 3 4 state [2:0] $end
+$var integer 32 5 i [31:0] $end
+$scope module RotWord_inst $end
+$var wire 32 6 word_in [31:0] $end
+$var wire 32 7 word_out [31:0] $end
+$upscope $end
+$scope module Xorr_inst $end
+$var wire 128 8 key_prev [127:0] $end
+$var wire 4 9 round [3:0] $end
+$var wire 32 : subword [31:0] $end
+$var wire 32 ; temp [31:0] $end
+$var wire 32 < w4 [31:0] $end
+$var wire 32 = w5 [31:0] $end
+$var wire 32 > w6 [31:0] $end
+$var wire 32 ? w7 [31:0] $end
+$var wire 32 @ w3 [31:0] $end
+$var wire 32 A w2 [31:0] $end
+$var wire 32 B w1 [31:0] $end
+$var wire 32 C w0 [31:0] $end
+$var wire 32 D rcon [31:0] $end
+$var wire 128 E key_new [127:0] $end
+$scope module u_rcon $end
+$var wire 4 F round [3:0] $end
+$var reg 32 G rcon_out [31:0] $end
+$upscope $end
+$upscope $end
+$scope module sbox_wrapper_inst $end
+$var wire 1 ' clk $end
+$var wire 1 * rst_n $end
+$var wire 128 H state_in [127:0] $end
+$var reg 128 I state_out [127:0] $end
+$scope begin SBOX_LOOP[0] $end
+$scope module sbox_inst $end
+$var wire 8 J a [7:0] $end
+$var reg 8 K c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[1] $end
+$scope module sbox_inst $end
+$var wire 8 L a [7:0] $end
+$var reg 8 M c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[2] $end
+$scope module sbox_inst $end
+$var wire 8 N a [7:0] $end
+$var reg 8 O c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[3] $end
+$scope module sbox_inst $end
+$var wire 8 P a [7:0] $end
+$var reg 8 Q c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[4] $end
+$scope module sbox_inst $end
+$var wire 8 R a [7:0] $end
+$var reg 8 S c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[5] $end
+$scope module sbox_inst $end
+$var wire 8 T a [7:0] $end
+$var reg 8 U c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[6] $end
+$scope module sbox_inst $end
+$var wire 8 V a [7:0] $end
+$var reg 8 W c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[7] $end
+$scope module sbox_inst $end
+$var wire 8 X a [7:0] $end
+$var reg 8 Y c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[8] $end
+$scope module sbox_inst $end
+$var wire 8 Z a [7:0] $end
+$var reg 8 [ c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[9] $end
+$scope module sbox_inst $end
+$var wire 8 \ a [7:0] $end
+$var reg 8 ] c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[10] $end
+$scope module sbox_inst $end
+$var wire 8 ^ a [7:0] $end
+$var reg 8 _ c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[11] $end
+$scope module sbox_inst $end
+$var wire 8 ` a [7:0] $end
+$var reg 8 a c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[12] $end
+$scope module sbox_inst $end
+$var wire 8 b a [7:0] $end
+$var reg 8 c c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[13] $end
+$scope module sbox_inst $end
+$var wire 8 d a [7:0] $end
+$var reg 8 e c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[14] $end
+$scope module sbox_inst $end
+$var wire 8 f a [7:0] $end
+$var reg 8 g c [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin SBOX_LOOP[15] $end
+$scope module sbox_inst $end
+$var wire 8 h a [7:0] $end
+$var reg 8 i c [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1100011 i
+b0 h
+b1100011 g
+b0 f
+b1100011 e
+b0 d
+b1100011 c
+b0 b
+b1100011 a
+b0 `
+b1100011 _
+b0 ^
+b1100011 ]
+b0 \
+b1100011 [
+b0 Z
+b1100011 Y
+b0 X
+b1100011 W
+b0 V
+b1100011 U
+b0 T
+b1100011 S
+b0 R
+bx Q
+bz P
+bx O
+bz N
+bx M
+bz L
+bx K
+bz J
+b0 I
+b0zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz H
+b1000000000000000000000000 G
+b1 F
+bx E
+b1000000000000000000000000 D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bz :
+b1 9
+bx 8
+bz 7
+bz 6
+b1011 5
+b0 4
+b1 3
+bx 2
+bx 1
+bz 0
+0/
+b0 .
+bz -
+bz ,
+b1010100011010000110000101110100011100110010000001101101011110010010000001001011011101010110111001100111001000000100011001110101 +
+0*
+0)
+0(
+0'
+b1010100011010000110000101110100011100110010000001101101011110010010000001001011011101010110111001100111001000000100011001110101 &
+x%
+bx $
+bz #
+x"
+bz !
+$end
+#5000
+b1011 5
+1'
+#10000
+0'
+1*
+#15000
+x/
+b11000110110001101100011011000110110001101100011011000110110001101100011011000110110001101100011xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx .
+b11000110110001101100011011000110110001101100011011000110110001101100011011000110110001101100011xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx I
+1'
+#20000
+0'
+1(
+#25000
+b1 4
+1'
+#30000
+0'
+0(
+#35000
+b10 4
+1'
+#40000
+0'
+#45000
+b10000000000000000000000000 D
+b10000000000000000000000000 G
+b1 4
+b10 3
+b10 9
+b10 F
+1'
+#50000
+0'
+#55000
+b10 4
+1'
+#60000
+0'
+#65000
+b100000000000000000000000000 D
+b100000000000000000000000000 G
+b1 4
+b11 3
+b11 9
+b11 F
+1'
+#70000
+0'
+#75000
+b10 4
+1'
+#80000
+0'
+#85000
+b1000000000000000000000000000 D
+b1000000000000000000000000000 G
+b1 4
+b100 3
+b100 9
+b100 F
+1'
+#90000
+0'
+#95000
+b10 4
+1'
+#100000
+0'
+#105000
+b10000000000000000000000000000 D
+b10000000000000000000000000000 G
+b1 4
+b101 3
+b101 9
+b101 F
+1'
+#110000
+0'
+#115000
+b10 4
+1'
+#120000
+0'
+#125000
+b100000000000000000000000000000 D
+b100000000000000000000000000000 G
+b1 4
+b110 3
+b110 9
+b110 F
+1'
+#130000
+0'
+#135000
+b10 4
+1'
+#140000
+0'
+#145000
+b1000000000000000000000000000000 D
+b1000000000000000000000000000000 G
+b1 4
+b111 3
+b111 9
+b111 F
+1'
+#150000
+0'
+#155000
+b10 4
+1'
+#160000
+0'
+#165000
+b10000000000000000000000000000000 D
+b10000000000000000000000000000000 G
+b1 4
+b1000 3
+b1000 9
+b1000 F
+1'
+#170000
+0'
+#175000
+b10 4
+1'
+#180000
+0'
+#185000
+b11011000000000000000000000000 D
+b11011000000000000000000000000 G
+b1 4
+b1001 3
+b1001 9
+b1001 F
+1'
+#190000
+0'
+#195000
+b10 4
+1'
+#200000
+0'
+#205000
+b110110000000000000000000000000 D
+b110110000000000000000000000000 G
+b1 4
+b1010 3
+b1010 9
+b1010 F
+1'
+#210000
+0'
+#215000
+b10 4
+1'
+#220000
+0'
+#225000
+b11 4
+1'
+#230000
+0'
