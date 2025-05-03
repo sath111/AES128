@@ -37,7 +37,10 @@ The design focuses on high-speed encryption while optimizing resource usage, mak
 ## **Performance**
 * The AES-128 encryption core operates at a **maximum frequency of 117.92 MHz** on the DE2 FPGA board, as reported by the Quartus Timing Analyzer.
 
+## **Conclusuion**
+* This project is part of my course project, where I implemented AES-128 encryption in Verilog. It allowed me to gain experience in digital system design and Verilog usage, while also improving my skills in optimizing performance and resources.
+
 ## **References**
-* A. Brokalakis, H. Michail, A. Kakarountas, E. Fotopoulou, A. Milidonis, G. Theodoridis, C. Goutis(2005): "**A High-Speed and Area Efficient Hardware Implementation of AES-128 Encryption Standard**". https://www.researchgate.net/publication/255574994_A_High-Speed_and_Area_Efficient_Hardware_Implementation_of_AES128_Encryption_Standard
+* A. Brokalakis, H. Michail, A. Kakarountas, E. Fotopoulou, A. Milidonis, G. Theodoridis, C. Goutis(2005): "**A High-Speed and Area Efficient Hardware Implementation of AES-128 Encryption Standard**". *https://www.researchgate.net/publication/255574994_A_High-Speed_and_Area_Efficient_Hardware_Implementation_of_AES128_Encryption_Standard*
 
 
