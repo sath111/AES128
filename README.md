@@ -31,7 +31,7 @@ The design focuses on high-speed encryption while optimizing resource usage, mak
    ```
 
 ## **Resource Utilization**
-* The AES-128 encryption core was successfully synthesized and implemented on the **DE2 FPGA development board**. The resource usage is summarized below
+* The AES-128 encryption core was successfully synthesized and implemented on the **DE2 FPGA development board**. The resource usage is summarized below  
 ![resource](Image/resources.png)
 
 ## **Performance**
