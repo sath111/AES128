@@ -17,7 +17,7 @@ The design focuses on high-speed encryption while optimizing resource usage, mak
 ## **Simulation Guide**
 1. Install a Verilog simulator
    * Icarus Verilog
-2. Compile source code with testbench'
+2. Compile source code with testbench
    ```
    iverilog -o AES128_Pipelinev1_tb AES128_Pipelinev1_tb.v
    ```
