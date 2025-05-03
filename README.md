@@ -9,9 +9,9 @@ The design focuses on high-speed encryption while optimizing resource usage, mak
 ### In this design:  
 * **KeyLogic** is responsible for key expansion and generating round keys independently.  
 
-* **Processing Core**  
+* **Processing Core** performs the encryption operations (SubBytes, ShiftRows, MixColumns, and AddRoundKey) with a 1-stage pipeline, without significantly increasing hardware resource usage. This is one of the interesting points of the paper, achieving an optimal balance between performance and resource utilization. 
 ![PCORE Architecture](Image/ProcessingCore.png)  
-Performs the encryption operations (SubBytes, ShiftRows, MixColumns, and AddRoundKey) with a 1-stage pipeline, without significantly increasing hardware resource usage. This is one of the interesting points of the paper, achieving an optimal balance between performance and resource utilization.  
+ 
 * Both modules share a common **S-Box** for the SubBytes operation, ensuring efficient reuse of hardware resources.
 
 
