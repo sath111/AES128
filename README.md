@@ -14,5 +14,27 @@ The design focuses on high-speed encryption while optimizing resource usage, mak
  
 * Both modules share a common **S-Box** for the SubBytes operation, ensuring efficient reuse of hardware resources.
 
+## **Simulation Guide**
+1. Install a Verilog simulator
+   * Icarus Verilog
+2. Compile source code with testbench'
+   ```
+   iverilog -o AES128_Pipelinev1_tb AES128_Pipelinev1_tb.v
+   ```
+3. Run the simulator
+   ```
+   vvp AES128_Pipelinev1_tb
+   ```
+4. View waveform output
+   ```
+   gtkwave AES128_Pipelinev1_tb.vcd
+   ```
+
+## **Resource Utilization**
+* The AES-128 encryption core was successfully synthesized and implemented on the **DE2 FPGA development board**. The resource usage is summarized below
+![resource](Image/resources.png)
+
+## **Performance**
+* The AES-128 encryption core operates at a **maximum frequency of 117.92 MHz** on the DE2 FPGA board, as reported by the Quartus Timing Analyzer. 
 
 
